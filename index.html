@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/global.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <title>Travel Site</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="navbar__title">Travel Site</h2>
+            <ul class="navbar__list">
+                <li class="navbar__item navbar__item--current">Home</li>
+                <li class="navbar__item">Hawaii</li>
+                <li class="navbar__item">Iceland</li>
+                <li class="navbar__item">Greece</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__container-1">
+                <h1 class="hero__heading">
+                    Travelling Comes With Endless Discoveries
+                </h1>
+                <p class="hero__text">
+                    Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.
+                </p>
+                <button class="hero__button">Get Started</button>
+            </div>
+            <img class="hero__image" src="./assets/hero.png" alt="globe-and-airplane">
+        </section>
+
+        <section class="recommendations">
+            <h2 class="recommendations__title">Recommendations</h2>
+            <div class="recommendations__container">
+                <a href="./pages/hawaii.html" class="card card--hawaii">
+                    <h3 class="card__title">Hawaii</h3>
+                </a>
+
+                <a href="./pages/iceland.html" class="card card--iceland">
+                    <h3 class="card__title">Iceland</h3>
+                </a>
+
+                <a href="./pages/greece.html" class="card card--greece">
+                    <h3 class="card__title">Greece</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="contact">
+            <h2 class="contact__header">Contact</h2>
+            <p class="contact__sub-heading">EMAIL</p>
+            <p class="contact__content">info@travelsite.com</p>
+        </div>
+
+        <div class="hours">
+            <h2 class="hours__header">Hours</h2>
+            <div>
+                <p class="hours__sub-heading">MONDAY - FRIDAY</p>
+                <p class="hours__content">9:00 AM - 5:00 PM</p>
+            </div>
+
+            <div>
+                <p class="hours__sub-heading">SATURDAY</p>
+                <p class="hours__content">10:00 AM - 4:00 PM</p>
+            </div>
+
+            <div>
+                <p class="hours__sub-heading">SUNDAY</p>
+                <p class="hours__content">Closed</p>
+            </div>
+        </div>
+
+        <div class="social">
+            <h2 class="social__header">Social</h2>
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/icon-instagram.png" alt="Instagram" class="social__icon"></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/icon-facebook.png" alt="Facebook" class="social__icon"></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/icon-twitter.png" alt="Twitter" class="social__icon"></a>
+        </div>
+
+    </footer>
+</body>
+</html>
