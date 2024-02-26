@@ -1,16 +1,20 @@
 body {
     font-family: Verdana, Arial, sans-serif;
+    margin:0;
 }
 
 /** Styling for the header **/
 .navbar{
-    padding-bottom:0.313rem;
     display:flex;
+    padding-bottom:5px;
     background-color: #ffffff;
     justify-content:start;
     align-items: center;
 }
 
+.navbar__title-link{
+    text-decoration: none;
+}
 .navbar__title{
     font-size:1rem;
     color: #335576;
@@ -29,6 +33,10 @@ body {
     font-size:0.875rem;
 }
 
+.navbar__link{
+    text-decoration: none;
+    color:black;
+}
 .navbar__item--current{
     padding-bottom:0.625rem;
     border-bottom: 0.188rem solid #DB7A4E;
