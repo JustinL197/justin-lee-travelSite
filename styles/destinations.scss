@@ -1,0 +1,73 @@
+@use '../styles/partials/global' as *;
+
+/* Variables */ 
+
+$position-center-offset: center calc(50% - 50px);
+$border-radius-small: 0.313rem;
+$border-solid: 0.0625rem solid rgba(0, 0, 0, 0.2);
+$box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+
+/* styling for the background image for the respective destination */
+
+.background {
+    &__hawaii, &__iceland, &__greece {
+        width: 100%;
+        height: 43.75rem;
+        background-size: cover;
+        background-position: $position-center-offset;
+      }
+    
+      &__hawaii { background-image: url(../assets/hawaii.jpg); }
+      &__iceland { background-image: url(../assets/iceland.jpg); }
+      &__greece { background-image: url(../assets/greece.jpg); }
+    
+}    
+
+/* styling for the card section describing daily activities */
+
+.main-container {
+    &__cards {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+  
+    &__title {
+      margin-top: 0;
+      font-size: 4.063rem;
+      color: white;
+      padding-top: 3.75rem;
+      padding-left: 3.75rem;
+    }
+  }
+  
+  .card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 19%;
+    height: auto;
+    border: $border-solid;
+    border-radius: $border-radius-small;
+    box-shadow: $box-shadow;
+    padding-bottom: 3.75rem;
+  
+    &__title, &__items {
+      box-sizing: border-box;
+      width: 90%;
+      text-align: center;
+    }
+  
+    &__title {
+      margin-bottom: 0.625rem;
+      font-weight: bold;
+      border-bottom: 0.188rem solid black;
+    }
+  
+    &__items {
+      margin-bottom: 0;
+      background-color: #FEFAF5;
+      padding: 0.625rem;
+    }
+  }

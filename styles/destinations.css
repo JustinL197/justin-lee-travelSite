@@ -1,0 +1,157 @@
+/* global styling for the body */
+body {
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+}
+
+/* styling for the main nav-bar */
+.navbar {
+  display: flex;
+  padding-bottom: 0.313rem;
+  background-color: #ffffff;
+  justify-content: start;
+  align-items: center;
+}
+.navbar__title-link {
+  text-decoration: none;
+}
+.navbar__title {
+  font-size: 1rem;
+  color: #335576;
+  padding-left: 3.75rem;
+}
+.navbar__list {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: 3.75rem;
+}
+.navbar__item {
+  display: inline;
+  margin-right: 0.938rem;
+  font-size: 0.875rem;
+}
+.navbar__item--current {
+  padding-bottom: 0.625rem;
+  border-bottom: 0.188rem solid #DB7A4E;
+}
+.navbar__link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.navbar__link:hover {
+  text-shadow: 0 0 0.5rem #ff5252;
+}
+
+/* stlying for the footer */
+.footer {
+  display: flex;
+  padding: 1.875rem 0;
+  background-color: #FEFAF5;
+  justify-content: center;
+}
+.footer .contact__sub-heading {
+  padding-top: 0.625rem;
+}
+.footer .contact {
+  padding-left: 2.5rem;
+}
+.footer .hours {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 6.875rem;
+  width: 40%;
+}
+.footer .hours div {
+  padding-right: 3.75rem;
+}
+.footer .hours__header {
+  width: 100%;
+}
+.footer .social {
+  padding-left: 2.5rem;
+}
+
+.contact__header, .hours__header, .social__header {
+  color: #335576;
+  font-size: 1.25rem;
+}
+
+.contact__sub-heading, .hours__sub-heading, .social__sub-heading {
+  color: #DB7A4E;
+  font-size: 0.563rem;
+  font-weight: 100;
+}
+
+.contact__content, .hours__content, .social__content {
+  color: #335576;
+  font-size: 0.813rem;
+  font-weight: 100;
+}
+
+.social__icon {
+  width: auto;
+  height: 1.25rem;
+  padding-top: 1.875rem;
+  padding-right: 1.875rem;
+}
+
+/* Variables */
+/* styling for the background image for the respective destination */
+.background__hawaii, .background__iceland, .background__greece {
+  width: 100%;
+  height: 43.75rem;
+  background-size: cover;
+  background-position: center calc(50% - 50px);
+}
+.background__hawaii {
+  background-image: url(../assets/hawaii.jpg);
+}
+.background__iceland {
+  background-image: url(../assets/iceland.jpg);
+}
+.background__greece {
+  background-image: url(../assets/greece.jpg);
+}
+
+/* styling for the card section describing daily activities */
+.main-container__cards {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.main-container__title {
+  margin-top: 0;
+  font-size: 4.063rem;
+  color: white;
+  padding-top: 3.75rem;
+  padding-left: 3.75rem;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 19%;
+  height: auto;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.313rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  padding-bottom: 3.75rem;
+}
+.card-section__title, .card-section__items {
+  box-sizing: border-box;
+  width: 90%;
+  text-align: center;
+}
+.card-section__title {
+  margin-bottom: 0.625rem;
+  font-weight: bold;
+  border-bottom: 0.188rem solid black;
+}
+.card-section__items {
+  margin-bottom: 0;
+  background-color: #FEFAF5;
+  padding: 0.625rem;
+}

@@ -1,0 +1,201 @@
+/* global styling for the body */
+body {
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+}
+
+/* styling for the main nav-bar */
+.navbar {
+  display: flex;
+  padding-bottom: 0.313rem;
+  background-color: #ffffff;
+  justify-content: start;
+  align-items: center;
+}
+.navbar__title-link {
+  text-decoration: none;
+}
+.navbar__title {
+  font-size: 1rem;
+  color: #335576;
+  padding-left: 3.75rem;
+}
+.navbar__list {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: 3.75rem;
+}
+.navbar__item {
+  display: inline;
+  margin-right: 0.938rem;
+  font-size: 0.875rem;
+}
+.navbar__item--current {
+  padding-bottom: 0.625rem;
+  border-bottom: 0.188rem solid #DB7A4E;
+}
+.navbar__link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.navbar__link:hover {
+  text-shadow: 0 0 0.5rem #ff5252;
+}
+
+/* stlying for the footer */
+.footer {
+  display: flex;
+  padding: 1.875rem 0;
+  background-color: #FEFAF5;
+  justify-content: center;
+}
+.footer .contact__sub-heading {
+  padding-top: 0.625rem;
+}
+.footer .contact {
+  padding-left: 2.5rem;
+}
+.footer .hours {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 6.875rem;
+  width: 40%;
+}
+.footer .hours div {
+  padding-right: 3.75rem;
+}
+.footer .hours__header {
+  width: 100%;
+}
+.footer .social {
+  padding-left: 2.5rem;
+}
+
+.contact__header, .hours__header, .social__header {
+  color: #335576;
+  font-size: 1.25rem;
+}
+
+.contact__sub-heading, .hours__sub-heading, .social__sub-heading {
+  color: #DB7A4E;
+  font-size: 0.563rem;
+  font-weight: 100;
+}
+
+.contact__content, .hours__content, .social__content {
+  color: #335576;
+  font-size: 0.813rem;
+  font-weight: 100;
+}
+
+.social__icon {
+  width: auto;
+  height: 1.25rem;
+  padding-top: 1.875rem;
+  padding-right: 1.875rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FEFAF5;
+}
+.hero__container-1 {
+  display: flex;
+  padding-left: 3.75rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 0;
+}
+.hero__heading {
+  font-size: 1.75rem;
+  color: #335576;
+  width: 60%;
+  text-align: left;
+}
+.hero__text {
+  width: 75%;
+  margin-bottom: 1.25rem;
+  color: #335576;
+  font-size: 0.781rem;
+  font-weight: 100;
+  text-align: left;
+}
+.hero__button {
+  background-color: #DB7A4E;
+  width: 20%;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.781rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.hero__button:hover {
+  background-color: #c3735f;
+}
+.hero__image {
+  width: 30%;
+  padding: 3.125rem 4.688rem 3.75rem 0;
+}
+
+.recommendations__title {
+  font-size: 1.25rem;
+  color: #335576;
+  padding-left: 3.75rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.625rem;
+}
+.recommendations__container {
+  display: flex;
+  margin-bottom: 5rem;
+  width: 100%;
+  justify-content: center;
+}
+.recommendations .card {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  text-decoration: none;
+  width: 20%;
+  height: 25rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.313rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  margin-right: 4.375rem;
+}
+.recommendations .card::before {
+  content: ""; /* Required for the pseudo-element to display */
+  position: absolute;
+  width: 100%; /* Cover the full width of the card */
+  height: 100%; /* Cover the full height of the card */
+  background-color: rgba(1, 0, 0, 0.3); /* Semi-transparent overlay; adjust as needed */
+  opacity: 0; /* Make the overlay invisible initially */
+  transition: opacity 0.3s ease; /* Smooth transition for the overlay appearance */
+  pointer-events: none; /* Allows clicking through the overlay */
+}
+.recommendations .card:hover::before {
+  opacity: 1; /* Make the overlay visible on hover */
+}
+.recommendations .card__title {
+  color: white;
+  padding-right: 1.25rem;
+}
+.recommendations .card--hawaii, .recommendations .card--iceland, .recommendations .card--greece {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.recommendations .card--hawaii {
+  background-image: url(/assets/hawaii.jpg);
+}
+.recommendations .card--iceland {
+  background-image: url(/assets/iceland.jpg);
+}
+.recommendations .card--greece {
+  background-image: url(/assets/greece.jpg);
+  margin-right: 0;
+}

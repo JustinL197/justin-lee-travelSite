@@ -1,0 +1,130 @@
+@use '../styles/partials/global' as *;
+
+// Variables and sizes
+$background-color: #FEFAF5;
+$primary-color: #335576;
+$accent-color: #DB7A4E;
+$font-size-large: 1.75rem;
+$font-size-medium: 1.25rem;
+$font-size-small: 0.781rem;
+$padding-large: 3.75rem;
+$padding-medium: 1.25rem;
+$padding-small: 0.625rem;
+$card-border: 1px solid rgba(0, 0, 0, 0.2);
+$card-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+$button-hover-color: #c3735f;
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: $background-color;
+
+  &__container-1 {
+    display: flex;
+    padding-left: 3.75rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 0;
+  }
+
+  &__heading {
+    font-size: $font-size-large;
+    color: $primary-color;
+    width: 60%;
+    text-align: left;
+  }
+
+  &__text {
+    width: 75%;
+    margin-bottom: $padding-medium;
+    color: $primary-color;
+    font-size: $font-size-small;
+    font-weight: 100;
+    text-align: left;
+  }
+
+  &__button {
+    background-color: $accent-color;
+    width: 20%;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: $font-size-small;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+
+  &__image {
+    width: 30%;
+    padding: 3.125rem 4.688rem 3.75rem 0;
+  }
+}
+
+.recommendations {
+  &__title {
+    font-size: $font-size-medium;
+    color: $primary-color;
+    padding-left: $padding-large;
+    padding-top: $padding-medium;
+    padding-bottom: $padding-small;
+  }
+
+  &__container {
+    display: flex;
+    margin-bottom: 5rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    text-decoration: none;
+    width: 20%;
+    height: 25rem;
+    border: $card-border;
+    border-radius: 0.313rem;
+    box-shadow: $card-shadow;
+    margin-right: 4.375rem;
+
+    &::before {
+      content: ""; /* Required for the pseudo-element to display */
+      position: absolute;
+      width: 100%; /* Cover the full width of the card */
+      height: 100%; /* Cover the full height of the card */
+      background-color: rgba(1, 0, 0, 0.3); /* Semi-transparent overlay; adjust as needed */
+      opacity: 0; /* Make the overlay invisible initially */
+      transition: opacity 0.3s ease; /* Smooth transition for the overlay appearance */
+      pointer-events: none; /* Allows clicking through the overlay */
+    }
+    
+    &:hover::before{
+      opacity: 1; /* Make the overlay visible on hover */
+    }
+
+    &__title {
+      color: white;
+      padding-right: $padding-medium;
+    }
+
+    &--hawaii, &--iceland, &--greece {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--hawaii { background-image: url(/assets/hawaii.jpg); }
+    &--iceland { background-image: url(/assets/iceland.jpg); }
+    &--greece {
+      background-image: url(/assets/greece.jpg);
+      margin-right: 0;
+    }
+  }
+}

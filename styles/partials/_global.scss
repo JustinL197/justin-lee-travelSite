@@ -1,0 +1,122 @@
+
+$primary-color: #335576;
+$accent-color: #DB7A4E;
+$background-color: #FEFAF5;
+$font-size-base: 0.875rem;
+$font-size-large: 1.25rem;
+$padding-large: 3.75rem;
+$padding-medium: 2.5rem;
+$padding-small: 1.875rem;
+$padding-xsmall: 0.625rem;
+
+/* global styling for the body */
+body {
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+  }
+
+/* styling for the main nav-bar */
+.navbar {
+  display: flex;
+  padding-bottom: 0.313rem;
+  background-color: #ffffff;
+  justify-content: start;
+  align-items: center;
+
+  &__title-link {
+    text-decoration: none;
+  }
+
+  &__title {
+    font-size: 1rem;
+    color: $primary-color;
+    padding-left: $padding-large;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: $padding-large;
+  }
+
+  &__item {
+    display: inline;
+    margin-right: 0.938rem;
+    font-size: $font-size-base;
+
+    &--current {
+      padding-bottom: $padding-xsmall;
+      border-bottom: 0.188rem solid $accent-color;
+    }
+  }
+
+  &__link {
+    position: relative;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-shadow: 0 0 0.5rem #ff5252;
+    }
+  }
+}
+
+/* stlying for the footer */
+
+.footer {
+  display: flex;
+  padding: $padding-small 0;
+  background-color: $background-color;
+  justify-content: center;
+
+  .contact__sub-heading {
+    padding-top: $padding-xsmall;
+  }
+
+  .contact {
+    padding-left: $padding-medium;
+  }
+
+  .hours {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 6.875rem;
+    width: 40%;
+
+    div {
+      padding-right: $padding-large;
+    }
+
+    &__header {
+      width: 100%;
+    }
+  }
+
+  .social {
+    padding-left: $padding-medium;
+  }
+}
+
+.contact__header, .hours__header, .social__header {
+  color: $primary-color;
+  font-size: $font-size-large;
+}
+
+.contact__sub-heading, .hours__sub-heading, .social__sub-heading {
+  color: $accent-color;
+  font-size: 0.563rem;
+  font-weight: 100;
+}
+
+.contact__content, .hours__content, .social__content {
+  color: $primary-color;
+  font-size: 0.813rem;
+  font-weight: 100;
+}
+
+.social__icon {
+  width: auto;
+  height: 1.25rem;
+  padding-top: $padding-small;
+  padding-right: $padding-small;
+}
