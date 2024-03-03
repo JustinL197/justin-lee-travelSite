@@ -104,13 +104,13 @@ body {
   background-position: center calc(50% - 50px);
 }
 .background__hawaii {
-  background-image: url(../assets/hawaii.jpg);
+  background-image: url(../assets/images/hawaii.jpg);
 }
 .background__iceland {
-  background-image: url(../assets/iceland.jpg);
+  background-image: url(../assets/images/iceland.jpg);
 }
 .background__greece {
-  background-image: url(../assets/greece.jpg);
+  background-image: url(../assets/images/greece.jpg);
 }
 
 /* styling for the card section describing daily activities */

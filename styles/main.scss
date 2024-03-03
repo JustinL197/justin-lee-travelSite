@@ -9,7 +9,7 @@ $font-size-small: 0.781rem;
 $padding-large: 3.75rem;
 $padding-medium: 1.25rem;
 $padding-small: 0.625rem;
-$card-border: 1px solid rgba(0, 0, 0, 0.2);
+$card-border: 0.0625rem solid rgba(0, 0, 0, 0.2);
 $card-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 $button-hover-color: #c3735f;
 
@@ -123,10 +123,10 @@ $button-hover-color: #c3735f;
       background-repeat: no-repeat;
     }
 
-    &--hawaii { background-image: url(../assets/hawaii.jpg); }
-    &--iceland { background-image: url(../assets/iceland.jpg); }
+    &--hawaii { background-image: url(../assets/images/hawaii.jpg); }
+    &--iceland { background-image: url(../assets/images/iceland.jpg); }
     &--greece {
-      background-image: url(../assets/greece.jpg);
+      background-image: url(../assets/images/greece.jpg);
       margin-right: 0;
     }
   }
