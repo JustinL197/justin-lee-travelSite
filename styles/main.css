@@ -1,10 +1,10 @@
-/* global styling for the body */
+/* global styling for the body -- imported from _global.scss */
 body {
   font-family: Verdana, Arial, sans-serif;
   margin: 0;
 }
 
-/* styling for the main nav-bar */
+/* styling for the main nav-bar -- imported from _global.scss */
 .navbar {
   display: flex;
   padding-bottom: 0.313rem;
@@ -43,7 +43,7 @@ body {
   text-shadow: 0 0 0.5rem #ff5252;
 }
 
-/* stlying for the footer */
+/* stlying for the footer -- imported from _global.scss */
 .footer {
   display: flex;
   padding: 1.875rem 0;
@@ -96,6 +96,7 @@ body {
   padding-right: 1.875rem;
 }
 
+/* Styling for the hero section */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -141,6 +142,7 @@ body {
   padding: 3.125rem 4.688rem 3.75rem 0;
 }
 
+/* Styling for the main body section -- destination cards */
 .recommendations__title {
   font-size: 1.25rem;
   color: #335576;
@@ -168,17 +170,17 @@ body {
   margin-right: 4.375rem;
 }
 .recommendations .card::before {
-  content: ""; /* Required for the pseudo-element to display */
+  content: "";
   position: absolute;
-  width: 100%; /* Cover the full width of the card */
-  height: 100%; /* Cover the full height of the card */
-  background-color: rgba(1, 0, 0, 0.3); /* Semi-transparent overlay; adjust as needed */
-  opacity: 0; /* Make the overlay invisible initially */
-  transition: opacity 0.3s ease; /* Smooth transition for the overlay appearance */
-  pointer-events: none; /* Allows clicking through the overlay */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 .recommendations .card:hover::before {
-  opacity: 1; /* Make the overlay visible on hover */
+  opacity: 1;
 }
 .recommendations .card__title {
   color: white;
@@ -190,12 +192,12 @@ body {
   background-repeat: no-repeat;
 }
 .recommendations .card--hawaii {
-  background-image: url(/assets/hawaii.jpg);
+  background-image: url(../assets/hawaii.jpg);
 }
 .recommendations .card--iceland {
-  background-image: url(/assets/iceland.jpg);
+  background-image: url(../assets/iceland.jpg);
 }
 .recommendations .card--greece {
-  background-image: url(/assets/greece.jpg);
+  background-image: url(../assets/greece.jpg);
   margin-right: 0;
 }

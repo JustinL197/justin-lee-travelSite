@@ -1,10 +1,10 @@
-/* global styling for the body */
+/* global styling for the body -- imported from _global.scss */
 body {
   font-family: Verdana, Arial, sans-serif;
   margin: 0;
 }
 
-/* styling for the main nav-bar */
+/* styling for the main nav-bar -- imported from _global.scss */
 .navbar {
   display: flex;
   padding-bottom: 0.313rem;
@@ -43,7 +43,7 @@ body {
   text-shadow: 0 0 0.5rem #ff5252;
 }
 
-/* stlying for the footer */
+/* stlying for the footer -- imported from _global.scss */
 .footer {
   display: flex;
   padding: 1.875rem 0;
@@ -96,7 +96,6 @@ body {
   padding-right: 1.875rem;
 }
 
-/* Variables */
 /* styling for the background image for the respective destination */
 .background__hawaii, .background__iceland, .background__greece {
   width: 100%;

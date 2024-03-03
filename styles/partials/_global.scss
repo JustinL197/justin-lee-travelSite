@@ -9,13 +9,15 @@ $padding-medium: 2.5rem;
 $padding-small: 1.875rem;
 $padding-xsmall: 0.625rem;
 
-/* global styling for the body */
+/* global styling for the body -- imported from _global.scss */
+
 body {
     font-family: Verdana, Arial, sans-serif;
     margin: 0;
   }
 
-/* styling for the main nav-bar */
+/* styling for the main nav-bar -- imported from _global.scss */
+
 .navbar {
   display: flex;
   padding-bottom: 0.313rem;
@@ -61,7 +63,7 @@ body {
   }
 }
 
-/* stlying for the footer */
+/* stlying for the footer -- imported from _global.scss */
 
 .footer {
   display: flex;
